@@ -1,0 +1,35 @@
+\documentclass[screen, aspectratio=43]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usetheme[style=ntnu,language=en]{ntnu2017}
+
+\usepackage[english]{babel}
+
+\usepackage{tikz}
+\usepackage{tikzscale}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+
+\usetikzlibrary{external}
+\tikzexternalize[prefix=tikz/]
+
+\title[Short title]{The full and long title of the presentation}
+\subtitle{Subtitle if you want}
+\author[O. Nordmann]{Ola Nordmann}
+\institute[NTNU]{Department of \LaTeX-ical sciences, NTNU}
+\date{1 January 1970}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+\begin{frame}
+	\begin{figure}
+	\includegraphics{./pictures/nyquist_L.tikz}
+	\end{figure}
+\end{frame}
+
+\end{document}

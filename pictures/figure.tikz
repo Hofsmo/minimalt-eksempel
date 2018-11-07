@@ -1,0 +1,3 @@
+\begin{tikzpicture}
+	\node[rectangle, draw] (PMU) at (4,1) {PMU};
+\end{tikzpicture}
